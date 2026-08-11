@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: api
-        image: YOUR_DOCKERHUB_USERNAME/k8s-demo-api:latest
+        image: amazonlinux
         imagePullPolicy: Always
         ports:
         - containerPort: 3000
