@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: api
-        image: amazonlinux
+        image: saitejareddy2108/k8s-demo-api:latest
         imagePullPolicy: Always
         ports:
         - containerPort: 3000
