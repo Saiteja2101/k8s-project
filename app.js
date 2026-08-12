@@ -33,7 +33,7 @@ app.get('/', async (req, res) => {
   try {
     const result = await pool.query('SELECT NOW()');
     res.json({
-      message: 'Kubernetes App Connected to PostgreSQL Successfully!',
+      message: 'Automated CI/CD Pipeline Operational!',
       db_time: result.rows[0].now,
       pod_name: process.env.HOSTNAME
     });
