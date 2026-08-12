@@ -64,10 +64,9 @@ metadata:
   name: backend-service
   namespace: production
 spec:
-  type: NodePort
+  type: LoadBalancer
   ports:
-  - port: 3000
-    targetPort: 3000
-    nodePort: 30080
+  - port: 80          # Publicly exposes standard HTTP port 80
+    targetPort: 3000  # Routes internal traffic to container port 3000
   selector:
     app: backend-api
